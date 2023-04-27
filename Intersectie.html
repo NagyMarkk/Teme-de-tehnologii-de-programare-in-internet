@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <script type="">
+
+         var set1 = [1, 2, 3, 4, 5];
+         var set2 = [3, 4, 5, 6, 7];
+         var intersection = [];
+         for (var i = 0; i < set1.length; i++) {
+            for (var j = 0; j < set2.length; j++) {
+               if (set1[i] == set2[j]) {
+                  intersection.push(set1[i]);
+               }
+            }
+         }
+         document.write("Elementele comune din cele două mulțimi sunt:" + "<br />");
+         for (var k = 0; k < intersection.length; k++) {
+            document.write(intersection[k] + "<br />");
+         }
+      </script>
+   </body>
+</html>
