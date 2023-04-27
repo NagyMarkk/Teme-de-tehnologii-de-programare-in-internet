@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+	<h3> Text: <input type="Text" name="str" id="str"></h3>
+
+	<button type="button" onclick="strCap()">Capitaleaza</button>
+
+	<h2 id="result"></h2>
+
+	<script>
+		function strCap(){
+		var givenStr = document.getElementById('str').value;
+		
+		givenStr = givenStr.split(" ");
+		
+		for(let i = 0, x = givenStr.lenght; i < x; i++){
+			givenStr[i] = givenStr[i][0].toUpperCase() + givenStr[i].substr(1);
+			}
+			document.getElementById('result').innerHTML = givenStr.join(" ");
+		}
+	</script>
+</body>
+</html>
