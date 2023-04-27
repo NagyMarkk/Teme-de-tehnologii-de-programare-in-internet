@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="countdown"></div>
+		
+		<script>
+			var timp=600;
+			
+			function countdown(){
+				
+				var min = Math.floor(timp/60);
+				var sec = timp%60;
+				var count = document.getElementById("countdown");
+				count.innerHTML=`${min}:${sec}`;
+				
+				timp--;
+			}
+			setInterval(countdown,1000)
+		</script>
+		
+		
+	</body>
+</html>
